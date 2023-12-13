@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>calculator</title>
+</head>
+
+<body>
+  <p class="js-result-calculataion">Welcome!</p>
+  <p>
+    <button onclick="
+      expression('1');
+      ">1</button>
+
+    <button onclick="
+       expression('2');
+      ">2</button>
+
+    <button onclick="
+      expression('3');
+      ">3</button>
+
+    <button onclick="
+       expression('+');
+      " class="calc">+</button>
+  </p>
+
+  <p>
+    <button onclick="
+      expression('4');
+      ">4</button>
+
+    <button onclick="
+        expression('5');
+      ">5</button>
+
+    <button onclick="
+        expression('6');
+      ">6</button>
+
+    <button onclick="
+        expression('-');
+      " class="calc">-</button>
+  </p>
+
+  <p>
+    <button onclick="
+        expression('7');
+      ">7</button>
+
+    <button onclick="
+      expression('8');
+      ">8</button>
+
+    <button onclick="
+         expression('9');
+      ">9</button>
+
+    <button onclick="
+        expression('*');
+      " class="calc">*</button>
+  </p>
+
+  <p>
+    <button onclick="
+         expression('0');
+      ">0</button>
+
+    <button onclick="
+       expression('.');
+      ">.</button>
+
+    <button onclick="
+       solve();
+      ">=</button>
+
+    <button onclick="
+       expression('/');
+      " class="calc">/</button>
+  </p>
+
+  <p>
+    <button onclick="
+        Clear();
+      " class="Clear">Clear</button>
+  </p>
+
+  <script>
+    const res = document.querySelector('.js-result-calculataion');
+    let calculation = '';
+    function expression(value) {
+      calculation += value;
+      res.innerHTML = `${calculation}`;
+    }
+    function solve() {
+      const t = eval(calculation);
+      res.innerHTML= `${t}`;
+    }
+    function Clear()
+    {
+      res.innerHTML = '';
+      calculation= '';
+    }
+
+  </script>
+</body>
+
+</html>

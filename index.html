@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color:rgb(255, 217, 90);
+            color: #040404;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .main {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            height: 60px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .projects
+        {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(250, 218, 113);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px; 
+            display: grid;
+            grid-template-columns: 400px 400px 400px ;
+        }
+        .project
+        {
+           
+            margin: 50px 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        
+        img
+        {
+            height: 150px;
+        }
+         footer {
+            background-color:rgb(255, 217, 90);
+            color: #090909;
+            height: 50px;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color:rgb(255, 217, 90);
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+a
+{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JavaScript Projects</h1>
+    </header>
+
+    <main>
+        <div class="main">
+            <h2>Welcome to my JavaScript Projects Page</h2>
+            <p></p>
+        </div>
+        <!-- Add your project links or content here -->
+        <div class="projects">
+            <div class="project">
+                <h2>Rock Paper Sissors</h2>
+                <img src="./images/psr.webp" alt="">
+                <p>Classic Rock-Paper-Scissors game where the user plays against the computer. The interface allows the user to select their choice (rock, paper, or scissors), and the computer generates its choice randomly. Display the result on the screen, indicating whether the user won, lost, or if it's a tie. Added visual elements to make the game more engaging.</p>
+                <button class="button-50" role="button"><a href="./rps/Dom Rock Paper Scissors.html">View</a></button>
+            </div>
+            <div class="project">
+                <h2>To-Do list</h2>
+                <img src="./images/todo.avif" alt="">
+                <p>Dynamic Todo List application using HTML, CSS, and JavaScript. Users can add new tasks, mark tasks as complete, delete tasks, and organize them based on priority. The application should store the tasks locally, allowing users to access their Todo List even after refreshing the page.</p>
+                <button class="button-50" role="button"><a href="./todo/Todo list project.html">View</a></button>
+            </div>
+            <div class="project">
+                <h2>Calculator</h2>
+                <img src="./images/88b9621dc4527f521ca3d8e8ab4787fa.png" alt="">
+                <p> Build a basic calculator application with a user-friendly interface using HTML, CSS, and JavaScript. Has calculator operations such as addition, subtraction, multiplication, and division. Ensure that the calculator supports both keyboard and button input. The display should update dynamically as the user performs calculations, and it should handle basic arithmetic operations efficiently.</p>
+                <button class="button-50" role="button"><a href="./calcultor/Calculator.html">View</a></button>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 JavaScript Projects</p>
+    </footer>
+
+</body>
+
+</html>

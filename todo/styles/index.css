@@ -1,0 +1,51 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.title
+{
+    font-size: 30px;
+    font-weight: bold;
+    background-color:rgb(231, 230, 230);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+
+}
+.grid-template,.grid-template-input
+{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+.grid-template-input
+{
+    margin-bottom: 10px;
+}
+.task-input,.date-input
+{
+    font-size: 15px;
+    padding: 10px 15px;
+}
+.task-input-button
+{
+    background-color: green;
+   
+    padding: 12px 15px;
+   
+}
+.delete-button
+{
+    background-color: rgb(128, 0, 0);
+    padding: 10px 15px;
+}
+.delete-button,.task-input-button
+{
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px; 
+}
