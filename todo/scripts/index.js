@@ -13,7 +13,7 @@ function rendertask() {
         localStorage.removeItem('todolist');
         localStorage.setItem('todolist',JSON.stringify(todolist));
         rendertask();
-        " class= "delete-button">Delete</button>`;
+        " class= "delete-button">X</button>`;
         todohtml += html;
         }
     document.querySelector('.taskslist').innerHTML = todohtml;   
