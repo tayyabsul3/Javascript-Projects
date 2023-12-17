@@ -1,0 +1,258 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out;
+}
+body
+{
+    background-color: rgb(9, 11, 27);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img
+{
+    height: 150px; 
+}
+.r-1,.r-2
+{
+    border-bottom: 4px solid red; 
+}
+.b
+{
+   border-left: 4px solid red;
+}
+button
+{
+    padding: 15px 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 5px;
+
+}
+.game.display
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.greet.notdisplay
+{
+    display: none;
+}
+.welcome
+{
+    font-size: 90px;
+    color: red;
+    text-shadow: rgba(55,0,255,1) 0px 20px 151px;
+}
+.greet
+{
+  text-align: center;
+}
+
+.right,.left 
+{
+    margin: 0px 90px;
+    text-shadow: rgb(4, 4, 4) 0px 0px 151px;
+    background-color: rgb(252, 252, 252);
+    color: black;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+  
+}
+.moves
+{
+  display: flex;
+  margin: 20px;
+}
+
+.opacity
+{
+    opacity: 0.1;
+}
+.game
+{
+    display: none;
+}
+
+.toss
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.js-tossButton
+{
+    margin: 10px;
+    width: 150px;   
+}
+.js-tossButton.notdisplay
+{
+  display: none;
+}
+
+
+
+
+
+
+.stats 
+{  
+    text-align: center;
+}
+.stats p 
+{
+    font-size: 20px;
+    margin: 5px;
+
+}
+.stats p span
+{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.js-score{
+    
+    text-shadow: rgb(4, 4, 4) 0px 0px 151px;
+    background-color: rgb(219, 60, 60);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bolder;
+    width: 300px;
+}
+
+
+
+
+/* IMPORTED CSS */
+
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+/* NO 2 */
